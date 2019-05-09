@@ -126,17 +126,11 @@ public class JLoginHR extends javax.swing.JFrame {
 
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         //jika login melakukan pengisian pada textfield username dan password
-        if(iumc.login(txtUsername.getText(), txtPassword.getText())){
-            //maka akan masuk ke halaman utama
+        JOptionPane.showMessageDialog(this, iumc.login(txtUsername.getText(), txtPassword.getText()));
+            iumc.login(txtUsername.getText(), txtPassword.getText());
             MainFrame mainFrame = new MainFrame();
             mainFrame.setVisible(true);
-            
-            //perintah setelah login, frame akan hilang
             this.dispose();
-        } else {
-            //jika gagal login maka akan menampilkan perintah gagal login
-            JOptionPane.showConfirmDialog(null, "Maaf gagal login");
-        }
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void btnGoRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGoRegisterActionPerformed

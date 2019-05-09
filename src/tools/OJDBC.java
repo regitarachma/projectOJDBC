@@ -1,11 +1,13 @@
 package tools;
 
 import controllers.RegionController;
+import controllers.userManagementController;
 import daos.EmployeeDAO;
 import daos.LocationDAO;
 import daos.RegionDAO;
 import daos.UserManagementDAO;
 import icontrollers.IRegionController;
+import icontrollers.IUserManagementController;
 import idaos.IEmployeeDAO;
 import idaos.ILocationDAO;
 import idaos.IRegionDAO;
@@ -77,7 +79,8 @@ public class OJDBC {
 ////        IRegionController icr = new RegionController(connection.getConnection());
 //
 //        //Check Connection
-////        System.out.println(connection.getConnection());
+            DBConnection connection = new DBConnection();
+            System.out.println(connection.getConnection());
 
 ////        DAO
 //        //Insert
@@ -136,7 +139,13 @@ public class OJDBC {
 //        System.out.println(BCrypt.checkpw(password, hashed));
 
         //untuk memanggil JFrame login
-        JLoginHR jlhr = new JLoginHR();
-        jlhr.setVisible(true);
+//        JLoginHR jlhr = new JLoginHR();
+//        jlhr.setVisible(true);
+        
+//        IUserManagementController um = new userManagementController(connection.getConnection());
+//        System.out.println(um.login("yosef", "yosef"));
+               
+            //Login
+            new JLoginHR().setVisible(true);
     }
     }

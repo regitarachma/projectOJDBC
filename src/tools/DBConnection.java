@@ -17,7 +17,7 @@ public class DBConnection {
             ods.setPortNumber(1521);
             ods.setUser("hr");
             ods.setServiceName("XE");
-            ods.setPassword("regita");
+            ods.setPassword("admin");
             this.connection = ods.getConnection();
         } catch (Exception e){
             e.printStackTrace();

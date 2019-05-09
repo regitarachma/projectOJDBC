@@ -1,6 +1,7 @@
 
 package idaos;
 
+import java.util.List;
 import models.UserManagement;
 
 /**
@@ -8,8 +9,7 @@ import models.UserManagement;
  * @author RR17
  */
 public interface IUserManagementDAO {
-    public boolean register(UserManagement um);
-    
-    public boolean login(UserManagement um);
-    public boolean updatePass(UserManagement um);
+    public boolean insert(UserManagement u);
+    public List<UserManagement> getByUser(UserManagement u);
+    public boolean update(UserManagement u);
 }

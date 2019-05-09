@@ -8,17 +8,15 @@ public class UserManagement {
     private int id;
     private String username;
     private String password;
-    
-    //constructor
+
+    public UserManagement() {
+    }
+
     public UserManagement(String username, String password) {
         this.username = username;
         this.password = password;
     }
-    
-    public UserManagement(){
-    }
-    
-    //getter setter
+     
     public int getId() {
         return id;
     }
@@ -42,6 +40,5 @@ public class UserManagement {
     public void setPassword(String password) {
         this.password = password;
     }
-    
-    
+              
 }
