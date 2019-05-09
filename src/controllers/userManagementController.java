@@ -1,7 +1,7 @@
 package controllers;
 
 import daos.UserManagementDAO;
-import static groovy.xml.dom.DOMCategory.name;
+
 import icontrollers.IUserManagementController;
 import idaos.IUserManagementDAO;
 import java.sql.Connection;
